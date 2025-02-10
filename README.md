@@ -1,3 +1,5 @@
+# Kylian VINEL - A1
+
 # Examen - Complexité Algorithmique
 
 - Cette partie de l'examen est à rendre sous forme de repository git. Peu importe la plateforme utilisée mais pensez bien à mettre votre repo en public.
@@ -18,7 +20,7 @@ interface Artist {
   name: string;
 }
 
-function findArtistIndex(artists, name) {
+function findArtistIndex(artists: Artist[], name: string): string | number {
   for (let i = 0; i < artists.length; i++) {
     if (artists[i].name === name) {
       return artists[i].id;
